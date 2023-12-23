@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+   <style>
+    /* Add CSS styles for the navbar */
+    .navbar.show {
+       top: 0;
+    }
+
+    .active, btn:hover {
+        background-color: #f1f1f1;
+        color: white;
+    }
+    </style>
+   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body>
+        <nav id="navbar" class="navbar bg-[#EC6327] width-full z-20 sticky transition duration-300">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="img/logo-suitorange.png" class="h-[80px] w-[100px]" alt="Suitmedia Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                    <a href="#" id="btn" class="relative active:after:absolute after:content-[''] after:border-b-4 after:border-white after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex block py-2 px-1 text-white" aria-current="page">Work</a>
+                </li>
+                <li>
+                    <a href="#" id="btn" class="relative active:after:absolute after:content-[''] after:border-b-4 after:border-white after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex block py-2 px-1 text-white">About</a>
+                </li>
+                <li>
+                    <a href="#" id="btn" class="relative active:after:absolute after:content-[''] after:border-b-4 after:border-white after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex block py-2 px-1 text-white">Services</a>
+                </li>
+                <li> 
+                    <a href="#" id="btn" class="relative active:after:absolute after:content-[''] after:border-b-4 after:border-white after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex block py-2 px-1 text-white">ideas</a>
+                </li>
+                <li>
+                    <a href="#" id="btn" class="relative active:after:absolute after:content-[''] after:border-b-4 after:border-white after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex block py-2 px-1 text-white">Career</a>
+                </li>
+                <li>
+                    <a href="#" id="btn" class="relative active:after:absolute after:content-[''] after:border-b-4 after:border-white after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex block py-2 px-1 text-white">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <section class="flex bg-center bg-fixed bg-no-repeat bg-[url('https://images.inc.com/uploaded_files/image/1920x1080/ideas-lightbulb-illo_1940x900_34046.jpg')] bg-gray-700 bg-blend-multiply" style="clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 80%);">
+            <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Ideas</h1>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Where all our great things begin</p>
+            </div>
+        </section>
+
+        <div id="sort-menu" class="flex justify-around">
+            <div class="text-sm mt-6 text-gray-700">
+                Showing <span class="font-semibold text-gray-900">1</span> to <span class="font-semibold text-gray-900">10</span> of <span class="font-semibold text-gray-900">100</span> Entries
+            </div>
+
+            <div class="flex justify-around">
+                <div>
+                    <select class="block w-full px-4 py-2 mt-2 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none hover:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400">
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>100</option>
+                    </select>
+                </div>
+    
+                <div class="flex justify-around">
+                    <select class="block w-full px-4 py-2 mt-2 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none hover:border-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400">
+                        <option>Sort by</option>
+                        <option>Latest</option>
+                        <option>Oldest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="" class="grid p-[50px] mx-auto max-w-6xl grid-cols-12 col-span-12 gap-7 tails-selected-element">
+            <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
+                <a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">
+                    <img class="object-cover w-full shadow-sm max-h-56" src="https://blog.maukuliah.id/wp-content/uploads/2021/06/teknik-informatika-1024x680.jpeg">
+                </a>
+                <div class="relative flex flex-col items-start px-6 bg-white border border-t-0 border-gray-200 py-7 rounded-b-2xl">
+                    <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#">Teknik Informatika</a></h2>
+                    <p class="mt-2 text-sm text-gray-500">Check out these inspiring workstations to get ideas on how to level-up your workstation.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
+                <a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">
+                    <img class="object-cover w-full shadow-sm max-h-56" src="https://www.studiobelajar.com/wp-content/uploads/2022/02/engineer-salah-satu-prospek-kerja-jurusan-teknik-mesin.jpg">
+                </a>
+                <div class="relative flex flex-col items-start px-6 bg-white border border-t-0 border-gray-200 py-7 rounded-b-2xl">
+                    <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#_" class="">Teknik Mesin</a></h2>
+                    <p class="mt-2 text-sm text-gray-500">Learn how to be more disciplined in your diet and how you can eat to maximize productivity.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
+                <a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">
+                    <img class="object-cover w-full shadow-sm max-h-56" src="https://ft.uhamka.ac.id/wp-content/uploads/2020/01/695A2169.jpg">
+                </a>
+                <div class="relative flex flex-col items-start px-6 bg-white border border-t-0 border-gray-200 py-7 rounded-b-2xl">
+                    <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#">Teknik Elektro</a></h2>
+                    <p class="mt-2 text-sm text-gray-500">What does it mean to have a design mind-set? Learn how to improve your eye for design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex mx-auto items-center">
+            <ul class="inline-flex mx-auto items-center -space-x-px text-sm">
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+              </li>
+              <li>
+                <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+              </li>
+            </ul>
+        </div>
+  
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    </body>
+</html>
